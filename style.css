@@ -181,3 +181,179 @@ nav .menu a:hover {
   justify-content: center;
   align-items: center;
 }
+/* problems section  */
+
+#problems {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #ffffff;
+}
+
+#problems .problem-box {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.problem-box .problem-card {
+  padding: 40px 30px;
+  box-shadow: 0 6px 50px 0 #00000011;
+  max-width: 267px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-box .problem-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 60px 0 #00000022;
+}
+
+.problem-card .icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #ff5252;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+.problem-card .icon-circle img {
+  max-width: 40px;
+  filter: brightness(0) invert(1);
+}
+.problem-card h3 {
+  font-size: 22px;
+  color: #181818;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.problem-card p {
+  font-size: 16px;
+  color: #757575;
+  line-height: 26px;
+}
+
+/* solution section  */
+
+#solution {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #f8f9fa;
+}
+
+#solution .solution-container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.solution-container .solution-visual {
+  position: relative;
+  min-width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-visual .brain-center {
+  max-width: 300px;
+  z-index: 2;
+  position: relative;
+}
+
+.solution-visual .floating-icon {
+  position: absolute;
+  max-width: 60px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.solution-visual .icon-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.solution-visual .icon-2 {
+  top: 10%;
+  right: 10%;
+  animation-delay: 0.5s;
+}
+
+.solution-visual .icon-3 {
+  bottom: 10%;
+  left: 10%;
+  animation-delay: 1s;
+}
+
+.solution-visual .icon-4 {
+  bottom: 10%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.solution-container .solution-content {
+  flex: 1;
+}
+
+.solution-content .solution-label {
+  color: #4caf50;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.solution-content h2 {
+  font-size: 40px;
+  color: #181818;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.solution-content .solution-description {
+  font-size: 18px;
+  color: #757575;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.solution-content .features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.features-list .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.features-list .feature-item i {
+  color: #4caf50;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.features-list .feature-item span {
+  font-size: 18px;
+  color: #474747;
+  line-height: 28px;
+}
