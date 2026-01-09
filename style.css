@@ -357,3 +357,77 @@ nav .menu a:hover {
   color: #474747;
   line-height: 28px;
 }
+#cta {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f7f6f2;
+}
+
+#cta .cta-container {
+  text-align: center;
+}
+
+#cta .cta-note {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #757575;
+}
+
+/* footer  */
+
+footer {
+  background-color: #0f1620;
+  padding: 60px 0 30px;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container .footer-logo img {
+  height: 40px;
+}
+
+.footer-container .social h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-container .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-container .icons a {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer-container .icons a:hover {
+  background-color: #4caf50;
+  transform: translateY(-3px);
+}
+
+footer .footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
